@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Web Framework</title>
+    <script id="FRAMEWORK_SETTINGS">
+        /* If you change theses paths, the paths of FRAMEWORK.JS & FRAMEWORK.CSS can change as well, so make sure you updated their path below.*/
+        const FRAMEWORK_CLASS = "FW_SECTION";
+        const SHOW_SECTION_NAME = true;
+        const CSS_PATH = "assets/css";
+        const JS_PATH = "assets/js";
+    </script>
+    <script src="assets/js/FRAMEWORK.JS"></script>
+    <link href="assets/css/FRAMEWORK.CSS" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="FRAMEWORK-left-menu">
+        <img id="FRAMEWORK-left-menu-logo" src="assets/img/FRAMEWORK_LOGO.png" alt="LOGO" />
+        <div id="FRAMEWORK-left-menu-list">
+        </div>
+    </div>
+    <div class="FW_SECTION" id="example" display-name="Example !" script="example" css-name="the-example"
+        center="false">
+        <h1>Welcome on your <b>Web Framework</b> !</h1>
+        <h2>To understand how it works, read this little Guide !</h2>
+        <h3>Framework Settings</h3>
+        <p>In <em>index.html</em> you can find the Framework's settings :
+            <ul>
+                <li><em>FRAMEWORK_CLASS</em> : Represents the class name of the sections to be recognized by the
+                    Framework and put in the left menu. By default : <em>FW_SECTION</em>.
+                </li>
+                <li><em>SHOW_SECTION_NAME</em> : Sets the display of the section name in the corner. If True, sections must have a <em>display-name</em> attribute. True by default. </li>
+                <li><em>CSS_PATH</em> : The path to the directory containing your CSS files</li>
+                <li><em>JS_PATH</em> : The path to the directory containing your JS files</li>
+            </ul>
+        </p>
+        <h3>Framework Sections attributes</h3>
+        <p>
+            Framework's sections have several attributes :
+            <ul>
+                <li><em>display-name</em> : The name to display in the menu. If empty, <em>id</em> is used instead.</li>
+                <li><em>script</em> : The name of the optionnal script to use for this section.</li>
+                <li><em>css-name</em> : The name of the CSS file linked to this section. If empty, <em>id</em> is used
+                    instead. </li>
+                <li><em>center</em> : If true, centers all the content inside of the section. False by default.</li>
+            </ul>
+        </p>
+    </div>
+</body>
+
+</html>

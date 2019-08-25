@@ -1,0 +1,41 @@
+/* This file was made for the example and the framework absolutely doesn't need it to work, feel free to delete it. */
+
+#example {
+    padding-left: 30px;
+}
+
+h1, h2, h3, p, ul {
+    font-family: "Open Sans";
+    font-size: 30pt;
+}
+
+h2 {
+    font-size: 20pt;
+    margin-left: 30px;
+}
+
+h3 {
+    font-size: 15pt;
+    margin-left: 50px;
+}
+
+p {
+    font-size: 12pt;
+    margin-left: 70px;
+}
+
+ul {
+    font-size: 12pt;
+    margin-left: 100px;
+}
+ul li {
+    margin: 10px 0;
+}
+
+em {
+    font: 12pt monospace;
+    background: #EEE;
+    padding: 3px;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+}

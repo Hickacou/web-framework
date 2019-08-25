@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+#FRAMEWORK-left-menu {
+    width: 250px;
+    flex-shrink: 0;
+    height: 100%;
+    background: #333;
+    display: inline-block;
+    z-index: 10;
+}
+                    
+#FRAMEWORK-left-menu #FRAMEWORK-left-menu-logo {
+    width: 250px;
+    height: 100px;
+    color: #FFF;
+}
+
+#FRAMEWORK-left-menu #FRAMEWORK-left-menu-list {
+    box-sizing: border-box;
+    height: 80%;
+    overflow: auto;
+    padding: 10px 0;
+}
+#FRAMEWORK-left-menu #FRAMEWORK-left-menu-list > #no-section {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font: italic 12pt "Open Sans";
+}
+
+#FRAMEWORK-left-menu #FRAMEWORK-left-menu-list .FRAMEWORK-left-menu-link {
+    position: relative;
+    width: 80%;
+    padding: 5px;
+    padding-left: 14px;
+    margin: 3px auto;
+    background: #222;
+    font: 100% "Open Sans", Arial, sans-serif;
+    color: #FFF;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#FRAMEWORK-left-menu #FRAMEWORK-left-menu-list .FRAMEWORK-left-menu-link:hover {
+    box-shadow: 0px 5px 20px #222;
+}
+
+#FRAMEWORK-left-menu #FRAMEWORK-left-menu-list .FRAMEWORK-left-menu-link::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 80%;
+    border-radius: 2px;
+    background: #FFF;
+    top: 10%;
+    left: 5px;
+}
+
+#FRAMEWORK-left-menu #FRAMEWORK-left-menu-list .FRAMEWORK-left-menu-link.selected::after {
+    box-shadow: 0px 0px 5px #FFF;
+}
+
+
+.centered-framework-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.framework-section-display-id::after {
+    content: attr(display-name);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFF;
+    background: rgba(0, 0, 0, .8);
+    padding: 10px;
+    font: 10pt monospace;
+    border-bottom-left-radius: 3px;
+
+}
